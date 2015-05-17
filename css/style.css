@@ -1,0 +1,78 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.4;
+    margin: 0;
+}
+html body {
+   margin: 0;
+   padding: 0;
+}
+.row{
+    max-width: 1176px;
+    margin: 0 auto;
+    display: block;
+    
+}
+@font-face {
+  font-family: 'CenturyGothic-Regular';
+  src: url('fonts/centurygothic/CenturyGothic.eot');
+  src: url('fonts/centurygothic/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/centurygothic/CenturyGothic.woff') format('woff'),
+       url('fonts/centurygothic/CenturyGothic.ttf') format('truetype'),
+       url('fonts/centurygothic/CenturyGothic.svg#CenturyGothic-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CenturyGothic-Bold';
+  src: url('fonts/centurygothic/CenturyGothic-Bold.eot');
+  src: url('fonts/centurygothic/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/centurygothic/CenturyGothic-Bold.woff') format('woff'),
+       url('fonts/centurygothic/CenturyGothic-Bold.ttf') format('truetype'),
+       url('fonts/centurygothic/CenturyGothic-Bold.svg#CenturyGothic-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CenturyGothic-Italic';
+  src: url('fonts/centurygothic/CenturyGothic-Italic.eot');
+  src: url('fonts/centurygothic/CenturyGothic-Italic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/centurygothic/CenturyGothic-Italic.woff') format('woff'),
+       url('fonts/centurygothic/CenturyGothic-Italic.ttf') format('truetype'),
+       url('fonts/centurygothic/CenturyGothic-Italic.svg#CenturyGothic-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CenturyGothic-BoldItalic';
+  src: url('fonts/centurygothic/CenturyGothic-BoldItalic.eot');
+  src: url('fonts/centurygothic/CenturyGothic-BoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/centurygothic/CenturyGothic-BoldItalic.woff') format('woff'),
+       url('fonts/centurygothic/CenturyGothic-BoldItalic.ttf') format('truetype'),
+       url('fonts/centurygothic/CenturyGothic-BoldItalic.svg#CenturyGothic-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* ==========================================================================
+   LOGO-HEADER
+   ========================================================================== */
+   .logoHeader {
+    width: 100%;
+    background-color:#e4e4e4;
+    height:194px;
+   }
+     .logoHeaderBlockLeft{
+        max-width: 602px;
+        height:194px;
+        outline: 1px solid red;
+      }
+           .logoHeaderBlockLeft img{
+            margin-top: 65px;
+      }

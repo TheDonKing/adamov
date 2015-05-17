@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8"/>
@@ -9,7 +9,6 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
         <!-- Place favicon.ico in the root directory -->
-
         <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="stylesheet" href="css/main.css"/>
         <link rel="stylesheet" href="css/style.css"/>
@@ -24,8 +23,9 @@
 <div class="logoHeader">
     <div class="row">
         <div class="logoHeaderBlockLeft">
-          <img src="img/logo.png"  />  
-        </div>
+          <img src="img/logo.png"  />
+          <h1>КЛИНИКА<br/>РАМАЗАНОВЫХ</h1>
+        </div> gghg
         <div class="logoHeaderBlockRight"></div>
     </div>
 </div>

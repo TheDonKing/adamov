@@ -1,9 +1,9 @@
 ﻿<!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="ru">
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-        <title></title>
+        <title>Клиника Рамазановых gg- </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
@@ -25,8 +25,14 @@
         <div class="logoHeaderBlockLeft">
           <img src="img/logo.png"  />
           <h1>КЛИНИКА<br/>РАМАЗАНОВЫХ</h1>
-        </div> gghg
-        <div class="logoHeaderBlockRight"></div>
+
+        </div>
+        <div class="logoHeaderBlockRight">
+            <p>Медицинское учреждение по лечению
+                бесплодия и восполительных процессов</p>
+            <p><i class="fa fa-phone"></i>8 988 200 30 30</p>
+
+        </div>
     </div>
 </div>
 

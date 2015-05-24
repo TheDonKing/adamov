@@ -385,7 +385,7 @@ button {
   clear: both;
 }
 .ch-grid li {
-  width: 173px;
+  width: 175px;
   height: 173px;
   display: inline-block;
   margin: 40px;
@@ -696,21 +696,6 @@ button {
   top: 60px;
   z-index: 2;
 }
-.ha1 {
-  left: 230px;
-}
-.ha2 {
-  left: 465px;
-}
-.ha3 {
-  left: 710px;
-}
-.ha4 {
-  left: 945px;
-}
-.ha5 {
-  left: 1185px;
-}
 .h1 {
   background: url("../img/animation/h1.png") no-repeat center top;
 }
@@ -737,4 +722,113 @@ button {
   animation-name: fadeInUp;
   animation-timing-function: ease;
   visibility: visible !important;
+}
+/*Услуги-Анимация -2-------------------------------------*/
+.uslugiFooter {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.uslugiFooter img {
+  max-width: 100%;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: -82px;
+}
+.uslugiFooter h2 {
+  text-align: left;
+  font: 14px CenturyGothic-Regular, sans-serif;
+  color: #000;
+  max-width: 61%;
+  z-index: 3;
+  position: relative;
+  margin-bottom: 52px;
+}
+.uslugiFooter .ch-grid {
+  margin: 0 auto;
+  float: left;
+  z-index: 2;
+  position: relative;
+}
+.uslugiFooter .ch-grid li {
+  width: 170px;
+  margin: 35px ;
+}
+.z1 {
+  background: url("../img/animation/z1.png") no-repeat center top;
+}
+.z2 {
+  background: url("../img/animation/z2.png") no-repeat center top;
+}
+.z3 {
+  background: url("../img/animation/z3.png") no-repeat center top;
+}
+.fadeInRight {
+  animation-duration: 0.7s;
+  animation-name: fadeInRight;
+  animation-timing-function: ease;
+  visibility: visible !important;
+}
+/*Сертификаты-------------------------------------*/
+.sertificat {
+  height: 500px;
+  background-color: #e6e6e6;
+  width: 100%;
+}
+/*Сертификаты-FlexSlider-------------------------------------*/
+#flexiselDemo1,
+#flexiselDemo2,
+#flexiselDemo3 {
+  display: none;
+}
+.nbs-flexisel-container {
+  position: relative;
+  max-width: 100%;
+}
+.nbs-flexisel-ul {
+  position: relative;
+  width: 9999px;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-align: center;
+}
+.nbs-flexisel-inner {
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+.nbs-flexisel-item {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  cursor: pointer;
+  position: relative;
+  line-height: 0px;
+}
+.nbs-flexisel-item img {
+  cursor: pointer;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 80%;
+}
+/*** Navigation ***/
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
+  opacity: 0.5;
+}
+.nbs-flexisel-nav-left {
+  left: 10px;
+  background: url(../img/flexslider/button-previous.png) no-repeat;
+}
+.nbs-flexisel-nav-right {
+  right: 5px;
+  background: url(../img/flexslider/button-next.png) no-repeat;
 }

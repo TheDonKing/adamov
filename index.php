@@ -23,6 +23,8 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/modernizr.custom.js"></script>
 
+
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -274,20 +276,57 @@
                 </div>
             </section>
             </div>
+        </div>
+        <div class="uslugiFooter ">
+            <div class="row">
+                <section class="reviews">
 
+                    <div class=" wrap scroll-animate">
+                <ul class="ch-grid">
+                    <li>
+                        <div style="opacity: 1;" class="hww_one animation z1">
+                            <span>Точная диагностика</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="opacity: 1;" class="hww_one animation z2">
+                            <span>Индивидуальный подход</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="opacity: 1;" class="hww_one animation z3">
+                            <span>Вимание и чуткость к пациентов</span>
+                        </div>
+                    </li>
+                </ul>
+                    </div>
+                <img src="img/uslugiheader.png">
+                </section>
+                <h2>Мы считаем, что эффективность лечения зависит от индивидуального подхода врача и от его профессионализма, это позволяет добиться успеха в лечении порой запущенных и трудноподдающихся лечению воспалительных процессов.
+                    Приходите к нам в «Клинику Рамазановых» и мы решим Вашу проблему.  </h2>
+            </div>
+        </div>
+        <div class="sertificat">
+            <div class="row">
+                <ul id="flexiselDemo3">
+                    <li><img src="img/flexslider/1.jpg" /></li>
+                    <li><img src="img/flexslider/2.jpg" /></li>
+                    <li><img src="img/flexslider/3.jpg" /></li>
+                    <li><img src="img/flexslider/4.jpg" /></li>
+                </ul>
+            </div>
         </div>
 
 
 
 
+        <!-- Тут подключаем скрипты -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.4.2.min.js"><\/script>')</script>
         <script src="js/jquery.js"></script>
-
         <!-- Анимация 2 как мы работаем -->
         <script type="text/javascript" src="js/animation/scripts.js"></script>
         <script type="text/javascript" src="js/animation/jquery.js"></script>
-
         <!-- Grid3D -->
         <script src="js/grid3d/classie.js"></script>
         <script src="js/grid3d/helper.js"></script>
@@ -295,11 +334,8 @@
         <script>
             new grid3D( document.getElementById( 'grid3d' ) );
         </script>
-
-
         <!-- iosSlider plugin -->
         <script src = "js/jquery.iosslider.min.js"></script>
-
         <script type="text/javascript">
             $(document).ready(function() {
 
@@ -322,7 +358,6 @@
 
             }
         </script>
-
         <!-- Проверка формы -->
         <script src="js/jquery.validate.js" type="text/javascript"></script>
         <script src="js/plugins.js"></script>
@@ -336,6 +371,34 @@
         <!-- Paralax -->
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/paralax/jquery.stellar.min.js"></script>
+        <!-- Карусель -->
+        <script type="text/javascript" src="js/flexslider/jquery.flexisel.js"></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+                $("#flexiselDemo3").flexisel({
+                    visibleItems: 3,
+                    animationSpeed: 1000,
+                    autoPlay: true,
+                    autoPlaySpeed: 3000,
+                    pauseOnHover: true,
+                    enableResponsiveBreakpoints: true,
+                    responsiveBreakpoints: {
+                        portrait: {
+                            changePoint:480,
+                            visibleItems: 1
+                        },
+                        landscape: {
+                            changePoint:640,
+                            visibleItems: 2
+                        },
+                        tablet: {
+                            changePoint:768,
+                            visibleItems: 3
+                        }
+                    }
+                });
+            });
+        </script>
 
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

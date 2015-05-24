@@ -41,7 +41,7 @@ $(document).ready(function() {
 			});
 		});
 
-		$('.hww, .reviews').on('animateIn', function() { //Vtyztv
+		$('.hww').on('animateIn', function() { //Vtyztv
 			var inter = 0;
 			$(this).find('.animation').each(function() {
 				var block = $(this);
@@ -57,19 +57,19 @@ $(document).ready(function() {
 			});
 		});
 		
-		$('.dc1, .dc2, .dc3, .dc4, .contacts').on('animateIn', function() {
+		$('.reviews').on('animateIn', function() {
 			var inter = 0;
 			$(this).find('.animation').each(function() {
 				var block = $(this);
 				setTimeout(function() {
 					block.css('opacity', 1);
-					block.addClass('fadeInUp');
+					block.addClass('fadeInRight');
 				}, inter*200);
 				inter++;
 			});
 		}).on('animateOut', function() {
 			$(this).find('.animation').each(function() {
-				$(this).removeClass('fadeInUp');
+				$(this).removeClass('fadeInRight');
 			});
 		});
 

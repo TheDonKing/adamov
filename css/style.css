@@ -5,6 +5,7 @@
     More info at: http://lesselements.com
   ---------------------------------------------------*/
 @import "font-awesome/css/font-awesome.min.css";
+@import "animate.css";
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -37,32 +38,33 @@ h6 {
   margin: 0 auto;
   display: block;
   font-size: 100%;
+  height: auto;
 }
 @font-face {
   font-family: 'CenturyGothic-Regular';
-  src: url('fonts/centurygothic/CenturyGothic.eot');
-  src: url('fonts/centurygothic/CenturyGothic.eot?#iefix') format('embedded-opentype'), url('fonts/centurygothic/CenturyGothic.woff') format('woff'), url('fonts/centurygothic/CenturyGothic.ttf') format('truetype'), url('fonts/centurygothic/CenturyGothic.svg#CenturyGothic-Italic') format('svg');
+  src: url('font-awesome/fonts/fonts/centurygothic/CenturyGothic.eot');
+  src: url('font-awesome/fonts/fonts/centurygothic/CenturyGothic.eot?#iefix') format('embedded-opentype'), url('font-awesome/fonts/fonts/centurygothic/CenturyGothic.woff') format('woff'), url('font-awesome/fonts/fonts/centurygothic/CenturyGothic.ttf') format('truetype'), url('font-awesome/fonts/fonts/centurygothic/CenturyGothic.svg#CenturyGothic-Italic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'CenturyGothic-Bold';
-  src: url('fonts/centurygothic/CenturyGothic-Bold.eot');
-  src: url('fonts/centurygothic/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/centurygothic/CenturyGothic-Bold.woff') format('woff'), url('fonts/centurygothic/CenturyGothic-Bold.ttf') format('truetype'), url('fonts/centurygothic/CenturyGothic-Bold.svg#CenturyGothic-Italic') format('svg');
+  src: url('font-awesome/fonts/fonts/centurygothic/CenturyGothic-Bold.eot');
+  src: url('font-awesome/fonts/fonts/centurygothic/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'), url('font-awesome/fonts/fonts/centurygothic/CenturyGothic-Bold.woff') format('woff'), url('font-awesome/fonts/fonts/centurygothic/CenturyGothic-Bold.ttf') format('truetype'), url('font-awesome/fonts/fonts/centurygothic/CenturyGothic-Bold.svg#CenturyGothic-Italic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'CenturyGothic-Italic';
-  src: url('fonts/centurygothic/CenturyGothic-Italic.eot');
-  src: url('fonts/centurygothic/CenturyGothic-Italic.eot?#iefix') format('embedded-opentype'), url('fonts/centurygothic/CenturyGothic-Italic.woff') format('woff'), url('fonts/centurygothic/CenturyGothic-Italic.ttf') format('truetype'), url('fonts/centurygothic/CenturyGothic-Italic.svg#CenturyGothic-Italic') format('svg');
+  src: url('font-awesome/fonts/fonts/centurygothic/CenturyGothic-Italic.eot');
+  src: url('font-awesome/fonts/fonts/centurygothic/CenturyGothic-Italic.eot?#iefix') format('embedded-opentype'), url('font-awesome/fonts/fonts/centurygothic/CenturyGothic-Italic.woff') format('woff'), url('font-awesome/fonts/fonts/centurygothic/CenturyGothic-Italic.ttf') format('truetype'), url('font-awesome/fonts/fonts/centurygothic/CenturyGothic-Italic.svg#CenturyGothic-Italic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'CenturyGothic-BoldItalic';
-  src: url('fonts/centurygothic/CenturyGothic-BoldItalic.eot');
-  src: url('fonts/centurygothic/CenturyGothic-BoldItalic.eot?#iefix') format('embedded-opentype'), url('fonts/centurygothic/CenturyGothic-BoldItalic.woff') format('woff'), url('fonts/centurygothic/CenturyGothic-BoldItalic.ttf') format('truetype'), url('fonts/centurygothic/CenturyGothic-BoldItalic.svg#CenturyGothic-Italic') format('svg');
+  src: url('font-awesome/fonts/fonts/centurygothic/CenturyGothic-BoldItalic.eot');
+  src: url('font-awesome/fonts/fonts/centurygothic/CenturyGothic-BoldItalic.eot?#iefix') format('embedded-opentype'), url('font-awesome/fonts/fonts/centurygothic/CenturyGothic-BoldItalic.woff') format('woff'), url('font-awesome/fonts/fonts/centurygothic/CenturyGothic-BoldItalic.ttf') format('truetype'), url('font-awesome/fonts/fonts/centurygothic/CenturyGothic-BoldItalic.svg#CenturyGothic-Italic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -111,4 +113,628 @@ h6 {
 }
 .logoHeaderBlockRight p:nth-child(2) i {
   padding-right: 10px;
+}
+/* ==========================================================================
+   SLIDER-HEADER
+   ========================================================================== */
+.slider {
+  height: 315px;
+  background-color: #00a388;
+  width: 100%;
+}
+/*--------------------------СлайдШоу*/
+.slideshow {
+  /* defaults for resposive height container */
+  width: 75%;
+  /* 39% being the ratio we are maintaining
+   * calculated by looking at the image
+   * ratio: 400/1024 = ~0.39 */
+  padding: 0 0 0%;
+  overflow: hidden;
+  height: 315px;
+  margin: 0 auto;
+  float: left;
+}
+.slideshow i {
+  display: none;
+}
+.iosSlider {
+  width: 100%;
+  /* this height ends up being your maximum height,
+   * if you want it to scale forever, set it to
+   * a very high number */
+  height: 315px;
+}
+.iosSlider .slider {
+  width: 100%;
+  height: 100%;
+}
+.iosSlider .slider .item {
+  float: left;
+  width: 100%;
+}
+.iosSlider .slider .item img {
+  width: 84.3%;
+  height: auto;
+}
+/* controls */
+.slideshow .prevContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  padding: 0 0 19.5% 0;
+  z-index: 10;
+}
+.slideshow .prevContainer .prev {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: #aaa;
+}
+.slideshow .nextContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  padding: 0 0 19.5% 0;
+  z-index: 10;
+}
+.slideshow .nextContainer .next {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: #aaa;
+}
+.slideshow .selectorsBlock {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  height: 5%;
+  left: 0px;
+}
+.slideshow .selectorsBlock .selectors {
+  position: relative;
+  top: 0;
+  left: 2%;
+  width: 12%;
+  height: 100%;
+}
+.slideshow .selectorsBlock .selectors .item {
+  position: relative;
+  top: 0;
+  left: 0;
+  float: left;
+  width: 16%;
+  height: 100%;
+  margin: 0 0 0 5%;
+  background: #79bd8f;
+}
+.slideshow .selectorsBlock .selectors .selected {
+  background: #006a58;
+}
+.slideshow .selectorsBlock .selectors .first {
+  margin-left: 0;
+}
+/*--------------------------------Форма заполнения*/
+#borderform {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#fontForm {
+  font: 15px "CenturyGothic-Regular", sans-serif;
+}
+.formHeader {
+  width: 25%;
+  height: 270px;
+  float: right;
+  background-color: rgba(218, 218, 218, 0.87);
+  margin-top: 20px;
+}
+#form_bg input,
+button {
+  font: 16px CenturyGothic-Regular, sans-serif;
+  padding-left: 2px;
+  color: #d2e2e2 ;
+  width: 175px;
+  height: 35px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+}
+#form_bg input[type="text"] {
+  border: 1px solid #cfcfcf;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.7);
+  font: 15px "CenturyGothic-Regular", sans-serif;
+  height: 35px;
+  outline: medium none;
+  padding: 0 8px 0 30px;
+  width: 200px;
+}
+#form_bg input[type="email"] {
+  border: 1px solid #cfcfcf;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.7);
+  color: #dadada;
+  font: 15px "CenturyGothic-Regular", sans-serif;
+  height: 35px;
+  outline: medium none;
+  padding: 0 8px 0 30px;
+  width: 200px;
+}
+#form_bg input[type="phone"] {
+  border: 1px solid #cfcfcf;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.7);
+  color: #dadada;
+  font: 15px "CenturyGothic-Regular", sans-serif;
+  height: 35px;
+  outline: medium none;
+  padding: 0px 8px 0 30px;
+  width: 200px;
+}
+#form_bg form {
+  margin-top: 5px;
+  margin-left: 13px ;
+}
+#form_bg p.a3 {
+  text-align: left;
+  font: 20px "CenturyGothic-Bold", sans-serif;
+  line-height: 1;
+  padding: 16px 0 15px 15px;
+  color: #000000;
+}
+.icon.name:before {
+  font-family: FontAwesome;
+  content: "\f007";
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top: 6px;
+  position: absolute;
+  color: #dadada;
+}
+.icon.phone:before {
+  font-family: FontAwesome;
+  content: "\f095";
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top: 6px;
+  position: absolute;
+  color: #dadada;
+}
+/*--------------------------------------Кнопка формы*/
+.buttom {
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font: 15px CenturyGothic-Bold, Geneva, sans-serif;
+  color: #ffffff;
+  background-color: #9e0000;
+  background-image: -moz-linear-gradient(top, #ff393c 0%, #e20000 100%);
+  background-image: -webkit-linear-gradient(top, #ff393c 0%, #e20000 100%);
+  background-image: -o-linear-gradient(top, #ff393c 0%, #e20000 100%);
+  background-image: -ms-linear-gradient(top, #ff393c 0%, #e20000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e20000', endColorstr='#e20000', GradientType=0);
+  background-image: linear-gradient(top, #9e0000 0%, #e20000 100%);
+  height: 40px;
+  width: 76%;
+}
+.buttom:hover {
+  border: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font: 15px CenturyGothic-Bold, Geneva, sans-serif;
+  color: #ffffff;
+  background-color: #e20000;
+  background-image: -moz-linear-gradient(top, #e20000 0%, #9e0000 100%);
+  background-image: -webkit-linear-gradient(top, #e20000 0%, #9e0000 100%);
+  background-image: -o-linear-gradient(top, #e20000 0%, #9e0000 100%);
+  background-image: -ms-linear-gradient(top, #e20000 0%, #9e0000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e0000', endColorstr='#9e0000', GradientType=0);
+  background-image: linear-gradient(top, #e20000 0%, #9e0000 100%);
+}
+button {
+  cursor: pointer;
+}
+/* ==========================================================================
+   CONTENT
+   ========================================================================== */
+.production {
+  height: auto;
+  width: 100%;
+  z-index: 9999;
+}
+.production h2 {
+  text-align: center;
+  color: #000;
+  font: 20px CenturyGothic-Bold, Geneva, sans-serif;
+  text-transform: uppercase;
+  padding-top: 33px;
+}
+.production .item {
+  height: auto;
+  margin: 0 auto;
+}
+/*--------------------------------------Hover-Эффекты*/
+.ch-grid {
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+  max-width: 978px;
+}
+.ch-grid:after {
+  clear: both;
+}
+.ch-grid li {
+  width: 173px;
+  height: 173px;
+  display: inline-block;
+  margin: 40px;
+}
+.ch-grid li p {
+  color: #444444;
+  display: table;
+  margin: 23px auto;
+}
+.ch-grid li p a {
+  font: 15px CenturyGothic-Regular, Geneva, sans-serif;
+  color: #444444;
+  text-decoration: none;
+  border-bottom: 1px dashed #444444;
+  text-align: left;
+}
+.ch-grid li p a:hover {
+  color: #00a388;
+  border-bottom: none;
+  -webkit-transition: all 700ms ease;
+  -moz-transition: all 700ms ease;
+  -ms-transition: all 700ms ease;
+  -o-transition: all 700ms ease;
+  transition: all 700ms ease;
+}
+.ch-item {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  position: relative;
+  cursor: default;
+  margin: 0 auto;
+}
+.ch-info-wrap {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  top: -1px;
+  left: -10px;
+  background-color: #fff ;
+  box-shadow: 0 0 0 5px #00a388;
+}
+.ch-info {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.ch-info > div {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-position: center center;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.rotate {
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -o-transform: rotate3d(0, 1, 0, 180deg);
+  -ms-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+.ch-img-1 .ch-info .ch-info-back {
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -o-transform: rotate3d(0, 1, 0, 180deg);
+  -ms-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+  background: url(../img/production/1a.png) no-repeat center;
+  cursor: pointer;
+}
+.ch-img-2 .ch-info .ch-info-back {
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -o-transform: rotate3d(0, 1, 0, 180deg);
+  -ms-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+  background: url(../img/production/2a.png) no-repeat center;
+  cursor: pointer;
+}
+.ch-img-3 .ch-info .ch-info-back {
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -o-transform: rotate3d(0, 1, 0, 180deg);
+  -ms-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+  background: url(../img/production/3a.png) no-repeat center;
+  cursor: pointer;
+}
+.ch-img-4 .ch-info .ch-info-back {
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -o-transform: rotate3d(0, 1, 0, 180deg);
+  -ms-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+  background: url(../img/production/4a.png) no-repeat center;
+  cursor: pointer;
+}
+.ch-img-5 .ch-info .ch-info-back {
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -o-transform: rotate3d(0, 1, 0, 180deg);
+  -ms-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+  background: url(../img/production/5a.png) no-repeat center;
+  cursor: pointer;
+}
+.ch-img-6 .ch-info .ch-info-back {
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -o-transform: rotate3d(0, 1, 0, 180deg);
+  -ms-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+  background: url(../img/production/6a.png) no-repeat center;
+  cursor: pointer;
+}
+.ch-img-1 {
+  background: rgba(0, 0, 0, 0) url("../img/production/1.png") no-repeat scroll 0 0;
+}
+.ch-img-2 {
+  background: url(../img/production/2.png) no-repeat;
+}
+.ch-img-3 {
+  background: url(../img/production/3.png) no-repeat;
+}
+.ch-img-4 {
+  background: url(../img/production/4.png) no-repeat;
+}
+.ch-img-5 {
+  background: url(../img/production/5.png) no-repeat;
+}
+.ch-img-6 {
+  background: url(../img/production/6.png) no-repeat;
+}
+.ch-info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin: 0 15px;
+  padding: 40px 0 0;
+  height: 90px;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 1px #ffffff, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.ch-info p {
+  color: #fff;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.ch-info p a {
+  display: block;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding-top: 4px;
+  font-family: Arial, sans-serif;
+}
+.ch-info p a:hover {
+  color: rgba(255, 242, 34, 0.8);
+}
+.ch-item:hover .ch-info-wrap {
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8), inset 0 0 3px rgba(115, 114, 23, 0.8);
+}
+.ch-item:hover .ch-info {
+  -webkit-transform: rotate3d(0, 1, 0, -180deg);
+  -moz-transform: rotate3d(0, 1, 0, -180deg);
+  -o-transform: rotate3d(0, 1, 0, -180deg);
+  -ms-transform: rotate3d(0, 1, 0, -180deg);
+  transform: rotate3d(0, 1, 0, -180deg);
+}
+.support-note span {
+  color: #ac375d;
+  font-size: 16px;
+  display: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 0;
+}
+.no-cssanimations .support-note span.no-cssanimations,
+.no-csstransforms .support-note span.no-csstransforms,
+.no-csstransforms3d .support-note span.no-csstransforms3d,
+.no-csstransitions .support-note span.no-csstransitions {
+  display: block;
+}
+/* ==========================================================================
+   PARALAX
+   ========================================================================== */
+.paralax {
+  background: url("../img/paralax.jpg") no-repeat fixed center center;
+  background-size: cover;
+  height: 520px;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+#slide3 .wrapper {
+  max-width: 100%;
+}
+#slide3 img:first-child {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  left: 0 !important;
+}
+/*Услуги-Анимация-------------------------------------*/
+.uslugi {
+  height: auto;
+  width: 100%;
+  background-color: #e6e6e6;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.hww .wrap .ch-grid {
+  max-width: 100% ;
+  margin: 0;
+}
+.hww .wrap {
+  height: auto;
+  margin-top: 25px;
+}
+.hww {
+  margin-bottom: 25px;
+}
+.hww .wrap-outer {
+  top: 20px !important;
+}
+.hww h2 {
+  text-align: center;
+  font: 20px CenturyGothic-Bold, sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  max-width: 73%;
+  margin: 0 auto;
+}
+.hww_one span {
+  font: 15px CenturyGothic-Regular, sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.hww_one {
+  /*width: 25%;*/
+  float: left;
+  padding-top: 135px;
+  text-align: center;
+}
+.hww a {
+  display: inline-block;
+  height: 44px;
+  width: 192px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 34px;
+  text-shadow: 0px 1px 0px rgba(255, 247, 112, 0.7);
+  background: url("../img/hww_a.png") no-repeat 0px 0px;
+  color: #000;
+  font-family: 'ps_regular';
+  margin-top: 20px;
+}
+.hww a:hover {
+  background-position: 0px -44px;
+}
+.hww a:active {
+  background-position: 0px -88px;
+}
+.hww_arrow {
+  width: 26px;
+  height: 52px;
+  position: absolute;
+  background: url("../img/hww_arrow.png") no-repeat center;
+  top: 60px;
+  z-index: 2;
+}
+.ha1 {
+  left: 230px;
+}
+.ha2 {
+  left: 465px;
+}
+.ha3 {
+  left: 710px;
+}
+.ha4 {
+  left: 945px;
+}
+.ha5 {
+  left: 1185px;
+}
+.h1 {
+  background: url("../img/animation/h1.png") no-repeat center top;
+}
+.h2 {
+  background: url("../img/animation/h2.png") no-repeat center top;
+}
+.h3 {
+  background: url("../img/animation/h3.png") no-repeat center top;
+}
+.h4 {
+  background: url("../img/animation/h4.png") no-repeat center top;
+}
+.h5 {
+  background: url("../img/animation/h5.png") no-repeat center top;
+}
+.h6 {
+  background: url("../img/animation/h6.png") no-repeat center top;
+}
+.animation {
+  visibility: hidden;
+}
+.fadeInUp {
+  animation-duration: 0.7s;
+  animation-name: fadeInUp;
+  animation-timing-function: ease;
+  visibility: visible !important;
 }

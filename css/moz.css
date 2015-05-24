@@ -1,0 +1,7 @@
+﻿@-moz-document url-prefix(http://ram.loc)
+{ #slide3 img:first-child {
+left: 0 !important;
+right: 0 !important;
+}
+}
+

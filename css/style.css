@@ -39,6 +39,7 @@ h6 {
   display: block;
   font-size: 100%;
   height: auto;
+  overflow: hidden;
 }
 @font-face {
   font-family: 'CenturyGothic-Regular';
@@ -772,7 +773,8 @@ button {
 }
 /*Сертификаты-------------------------------------*/
 .sertificat {
-  height: 500px;
+  padding: 35px 0px;
+  height: auto;
   background-color: #e6e6e6;
   width: 100%;
 }
@@ -810,9 +812,9 @@ button {
 .nbs-flexisel-item img {
   cursor: pointer;
   position: relative;
-  margin-top: 10px;
-  margin-bottom: 10px;
   max-width: 80%;
+  display: block;
+  margin: 10px auto;
 }
 /*** Navigation ***/
 .nbs-flexisel-nav-left,
@@ -831,4 +833,89 @@ button {
 .nbs-flexisel-nav-right {
   right: 5px;
   background: url(../img/flexslider/button-next.png) no-repeat;
+}
+/*** -----------------------------Form ***/
+.form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: #fff;
+}
+.textForm {
+  float: left;
+  width: 50%;
+}
+.form h2 {
+  color: #414042;
+  font: 30px CenturyGothic-Bold, sans-serif;
+  margin-bottom: 15px;
+}
+.form p {
+  color: #414042;
+  font: 20px CenturyGothic-Regular, sans-serif;
+}
+.contact-form {
+  float: left;
+  z-index: 1;
+  width: 50%;
+}
+.contact-form h3 {
+  width: 350px;
+  color: #414042;
+  font: 22px CenturyGothic-Regular, sans-serif;
+  margin-bottom: 25px;
+}
+.contact-form fieldset {
+  border: medium none;
+  padding: 0;
+}
+.contact-form label {
+  display: block;
+  height: 50px;
+}
+.contact-form input {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #E6E6E6;
+  color: #12A2FF;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.214em;
+  margin: 0;
+  outline: medium none;
+  padding: 12px 20px;
+  width: 323px;
+}
+.contact-form textarea {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #E6E6E6;
+  color: #808080;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  height: 130px;
+  line-height: 1.214em;
+  margin: 0;
+  outline: medium none;
+  overflow: auto;
+  padding: 12px 20px;
+  width: 100%;
+}
+.buttons-wrapper {
+  padding: 18px 0 0;
+}
+.buttons-wrapper a {
+  margin-left: 15px;
+}
+.form img {
+  width: 98px;
+  height: 99px;
+}
+.map {
+  margin: 0 auto;
+  width: 100%;
+  height: 450px;
+}
+.footer {
+  width: 100%;
+  height: 157px;
+  color: #000;
 }

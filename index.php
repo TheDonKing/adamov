@@ -317,6 +317,49 @@
             </div>
         </div>
 
+        <div class="form">
+            <div class="row">
+                <div class="textForm">
+                    <h2>Контакты:</h2>
+                    <p><span>Адрес:</span>
+                        Россия, 367030, г. <br /> Махачкала,
+                        ул. Азизова М. А., 57<br/>
+                        тел./факс: 8 (8722) 55-70-70<br/>
+                        Отдел продаж: тел.:<br /> +7 928 671-70-70<br/>
+                        www.ateks-smesi.ru
+                    </p>
+                </div>
+                <form class="contact-form" action="formdata.php" method="POST" name="form">
+                    <h3>Форма обратной связи:</h3>
+                    <fieldset>
+                        <label>
+                            <input type="text" value="Имя" onBlur="if(this.value=='')  this.value='Имя'" onFocus="if(this.value =='Имя' ) this.value=''"  name="name"  maxlength="20"/>
+                        </label>
+                        <label>
+                            <input type="text" value="Email" onBlur="if(this.value=='') this.value='Email'" onFocus="if(this.value =='Email' ) this.value=''" name="mail" maxlength="25"/>
+                        </label>
+                        <label>
+                            <input type="text" value="Телефон" onBlur="if(this.value=='') this.value='Телефон'" onFocus="if(this.value =='Телефон' ) this.value=''" name="phone" maxlength="13"/>
+                        </label>
+                        <textarea onBlur="if(this.value=='') this.value='Сообщение'" onFocus="if(this.value =='Сообщение' ) this.value=''" name="message" style="color:#12A2FF">Сообщение</textarea>
+
+                        <div class="buttons-wrapper">
+                            <input type="submit" id="inp" style="color:#000; width:175px;"  value="Отправить">
+
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div class="map">
+            <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=SzjT8PL3PmZemvT9Ofa29OAsoqn0I_jb&width=100%&height=450"></script>
+        </div>
+
+        <div class="footer">
+
+        </div>
+
 
 
 

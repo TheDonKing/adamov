@@ -41,8 +41,8 @@
         <!-- Add your site or application content here -->
 <div class="logoHeader">
     <div class="row">
-        <div class="logoHeaderBlockLeft">
-          <img src="img/logo.png"  />
+        <div class="logoHeaderBlockLeft ">
+          <img class="animated flip" src="img/logo.png"  />
           <h1>КЛИНИКА<br/>РАМАЗАНОВЫХ</h1>
 
         </div>
@@ -199,9 +199,55 @@
 
                     <div class="content">
                         <div>
-                            <div class="dummy-img"></div>
-                            <p class="dummy-text">1The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-                            <p class="dummy-text">1The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                            <div class="dummy-img"><img src="img/contentshow/ginekolog_turciya.jpg"> </div>
+                            <h3>МЫ ПОМОЖЕМ С ВАШЕЙ ПРОБЛЕМОЙ</h3>
+
+                            <section class="reviews">
+                                <div class=" wrap scroll-animate">
+                                    <ul class="ch-grid">
+                                        <li>
+                                            <div style="opacity: 1;" class="hww_one animation aa1">
+                                                <span>ЛЕЧЕНИЕ БЕСПЛОДНОГО БРАКА</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div style="opacity: 1;" class="hww_one animation aa2">
+                                                <span>ЖЕНСКИЕ ВОСПАЛИТЕЛЬНЫЕ ЗАБОЛЕВАНИЯ</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div style="opacity: 1;" class="hww_one animation aa3">
+                                                <span>ЛЕЧЕНИЕ ИНФЕКЦИЙ</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div style="opacity: 1;" class="hww_one animation aa4">
+                                                <span>МЕДИКАМЕНТОЗНОЕ ПРЕРЫВАНИЕ БЕРЕМЕННОСТИ</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div style="opacity: 1;" class="hww_one animation aa5">
+                                                <span>СОВРЕМЕННАЯ КОНТРАЦЕПЦИЯ</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <p class="dummy-text">Гинекологические заболевания отнимают не только женское здоровье,
+                                но и психологический комфорт.
+                                Именно поэтому мы создали в центре условия, которые располагают
+                                к доверительному общению, комфортному обследованию и лечению.
+                            </p>
+                            <p class="dummy-text-2">
+                               <span>ВОСПОЛЬЗУЙТЕСЬ НАШЕЙ МЕДИЦИНСКОЙ ПОМОЩЬЮ,</span><br>
+                                ЗАПИШИТЕСЬ НА ПЕРВИЧНЫЙ ПРИЁМ К ГИНЕКОЛОГУ ПРЯМО СЕЙЧАС
+                            </p>
+                            <span class="number">8 988 200 30 30</span>
+                            <div class="name-genekolog">
+                                <h3>КТО ВЕДЕТ ПРИЁМ?</h3>
+                                <p>Рамазанова Асият Ильясовна<br><span>Гинеколог</span></p>
+
+                            </div>
                         </div>
                         <div>
                             <div class="dummy-img"></div>
@@ -357,7 +403,12 @@
         </div>
 
         <div class="footer">
-
+            <div class="row">
+                <p>© Клиника камазановых<br>
+                    2015 г.</p>
+                <p>8 988 200 30 30 </p>
+                <p class="dt"><a href="http://www.s-dt.ru" target="_blank" >Разработано в DTStudio</a> </p>
+            </div>
         </div>
 
 

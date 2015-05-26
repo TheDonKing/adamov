@@ -237,17 +237,40 @@ p.dummy-text:nth-child(3) {
 
 .dummy-img {
     height: 400px;
-    background-color: #ddd;
+    background-color: #dddddd;
     margin: 30px auto;
 }
 
 .dummy-text {
-    text-align: left;
+    text-align:center;
     margin: 0 auto;
     padding: 10px 0;
-    color: #ddd;
+    color: #00a388;
     font-size: 1em;
-    font-family: 'Blokk', Arial, serif;
+    font-family: 'CenturyGothic-Regular', Arial serif;
+}
+p.dummy-text-2  span {
+    text-align:center;
+    margin: 0 auto;
+    padding: 10px 0;
+    color: red;
+    font-size:30px;
+    font-family: 'CenturyGothic-Bold', Arial serif;
+}
+p.dummy-text-2 {
+    text-align:center;
+    margin: 0 auto;
+    padding: 10px 0;
+    color:#000;
+    font-size:15px;
+    font-family: 'CenturyGothic-Regular', Arial  serif;
+}
+.content .show span.number{
+    font: 30px 'CenturyGothic-Bold', Arial sans-serif;
+    text-align: center;
+    color:red;
+    margin: 0 auto;
+    display:block;
 }
 
 .dummy-text:last-child {

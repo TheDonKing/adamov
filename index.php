@@ -418,6 +418,8 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.4.2.min.js"><\/script>')</script>
         <script src="js/jquery.js"></script>
+        <!-- Paralax -->
+        <script type="text/javascript" src="js/paralax/jquery.stellar.min.js"></script>
         <!-- Анимация 2 как мы работаем -->
         <script type="text/javascript" src="js/animation/scripts.js"></script>
         <script type="text/javascript" src="js/animation/jquery.js"></script>
@@ -462,9 +464,7 @@
                 $("body").niceScroll();
             });
         </script>
-        <!-- Paralax -->
-        <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript" src="js/paralax/jquery.stellar.min.js"></script>
+
         <!-- Карусель -->
         <script type="text/javascript" src="js/flexslider/jquery.flexisel.js"></script>
         <script type="text/javascript">
@@ -494,7 +494,7 @@
             });
         </script>
 
-
+        <script type="text/javascript" src="js/main.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

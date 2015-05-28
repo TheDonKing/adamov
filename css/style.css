@@ -83,7 +83,7 @@ h6 {
   float: left;
 }
 .logoHeaderBlockLeft img {
-  margin-top: 65px;
+  margin-top: 50px;
   float: left;
   display: inline;
 }
@@ -91,7 +91,7 @@ h6 {
   font: 30px CenturyGothic-Bold, sans-serif;
   text-transform: uppercase;
   color: #00a388;
-  padding-left: 200px;
+  padding-left: 165px;
   padding-top: 75px;
 }
 .logoHeaderBlockRight {
@@ -237,7 +237,7 @@ h6 {
   background-color: rgba(218, 218, 218, 0.87);
   margin-top: 20px;
 }
-#form_bg input,
+.form_bg input,
 button {
   font: 16px CenturyGothic-Regular, sans-serif;
   padding-left: 2px;
@@ -249,7 +249,7 @@ button {
   border-radius: 10px;
   border: none;
 }
-#form_bg input[type="text"] {
+.form_bg input[type="text"] {
   border: 1px solid #cfcfcf;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -261,7 +261,7 @@ button {
   padding: 0 8px 0 30px;
   width: 200px;
 }
-#form_bg input[type="email"] {
+.form_bg input[type="email"] {
   border: 1px solid #cfcfcf;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -274,7 +274,7 @@ button {
   padding: 0 8px 0 30px;
   width: 200px;
 }
-#form_bg input[type="phone"] {
+.form_bg input[type="phone"] {
   border: 1px solid #cfcfcf;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -287,11 +287,11 @@ button {
   padding: 0px 8px 0 30px;
   width: 200px;
 }
-#form_bg form {
+.form_bg form {
   margin-top: 5px;
   margin-left: 13px ;
 }
-#form_bg p.a3 {
+.form_bg p.a3 {
   text-align: left;
   font: 20px "CenturyGothic-Bold", sans-serif;
   line-height: 1;
@@ -607,7 +607,7 @@ button {
   display: block;
 }
 .content .show h3 {
-  color: red;
+  color: #ff393c;
   text-align: center;
 }
 .content .show .hww_one {
@@ -904,7 +904,16 @@ button {
 }
 .form p {
   color: #414042;
+  line-height: 1.55;
   font: 20px CenturyGothic-Regular, sans-serif;
+}
+.form p a {
+  color: #79bd8f;
+  text-decoration: none;
+  border-bottom: 1px dotted #79bd8f;
+}
+.form p a a:hover {
+  border: none;
 }
 .contact-form {
   float: left;
@@ -928,7 +937,7 @@ button {
 .contact-form input {
   background: none repeat scroll 0 0 #FFFFFF;
   border: 1px solid #E6E6E6;
-  color: #12A2FF;
+  color: #79bd8f;
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.214em;
@@ -940,7 +949,7 @@ button {
 .contact-form textarea {
   background: none repeat scroll 0 0 #FFFFFF;
   border: 1px solid #E6E6E6;
-  color: #808080;
+  color: #79bd8f;
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   height: 130px;
@@ -986,20 +995,395 @@ button {
   font: 30px CenturyGothic-Bold, sans-serif;
 }
 .footer p.dt {
-  margin: 0 auto;
-  padding-bottom: 10px;
-  padding-top: 35px;
+  margin: -30px auto 0px;
   font: 15px CenturyGothic-Regular, sans-serif;
   text-align: center;
 }
 .footer p.dt a {
-  color: red;
+  color: #fff;
   text-decoration: none;
-  border-bottom: 1px dashed red;
+  border-bottom: 1px dashed #fff;
+}
+.footer p.dt a::before {
+  content: "";
+  background: url(../img/dt.png) no-repeat;
+  height: 27px;
+  display: inline-block;
+  padding-bottom: -6px;
+  padding-right: 30px;
+  text-decoration: none;
 }
 .footer p:nth-child(2)::before {
   font: 30px "FontAwesome";
   content: "\f095";
   padding-left: 5px;
   padding-right: 6px;
+}
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+  .iosSlider .slider .item img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 800px) {
+  .iosSlider .slider .item img {
+    width: 100%;
+  }
+  .slideshow {
+    width: 100%;
+    float: none;
+  }
+  .slider {
+    height: auto;
+  }
+  .formHeader {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+  .form_bg {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .form_bg input[type="text"],
+  .form_bg input[type="phone"] {
+    width: 90%;
+  }
+  .form_bg .buttom {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .logoHeader {
+    height: auto;
+  }
+  .logoHeaderBlockLeft,
+  .logoHeaderBlockRight {
+    width: 100%;
+    float: none;
+  }
+  .logoHeaderBlockRight p:nth-child(1),
+  .logoHeaderBlockRight p:nth-child(2) {
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  .iosSlider .slider .item img {
+    width: 100%;
+  }
+  .slideshow {
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  .iosSlider {
+    max-height: 260px !important;
+  }
+  .slider {
+    height: auto;
+  }
+  .slideshow .selectorsBlock {
+    bottom: 5%;
+  }
+  .formHeader {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+  .form_bg {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .form_bg input[type="text"],
+  .form_bg input[type="phone"] {
+    width: 90%;
+  }
+  .form_bg .buttom {
+    width: 100%;
+  }
+  .textForm {
+    width: 100%;
+    padding-left: 25px;
+    float: none;
+  }
+  .contact-form {
+    float: none;
+    width: 100%;
+    padding-left: 25px;
+  }
+  .uslugiFooter h2 {
+    padding-left: 25px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .logoHeader {
+    height: auto;
+  }
+  .logoHeaderBlockLeft,
+  .logoHeaderBlockRight {
+    width: 100%;
+    float: none;
+  }
+  .logoHeaderBlockRight p:nth-child(1),
+  .logoHeaderBlockRight p:nth-child(2) {
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  .iosSlider .slider .item img {
+    width: 100%;
+  }
+  .slideshow {
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  .iosSlider {
+    max-height: 260px !important;
+  }
+  .slider {
+    height: auto;
+  }
+  .slideshow .selectorsBlock {
+    bottom: 5%;
+  }
+  .formHeader {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+  .form_bg {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .form_bg input[type="text"],
+  .form_bg input[type="phone"] {
+    width: 90%;
+  }
+  .form_bg .buttom {
+    width: 100%;
+  }
+  .textForm {
+    width: 100%;
+    padding-left: 25px;
+    float: none;
+  }
+  .contact-form {
+    float: none;
+    width: 100%;
+    padding-left: 25px;
+  }
+  .uslugiFooter {
+    overflow: hidden;
+  }
+  .uslugiFooter h2 {
+    padding-left: 25px;
+  }
+  .uslugiFooter img {
+    right: -200px;
+    top: 10px;
+  }
+  .footer p {
+    padding-left: 20px;
+  }
+  .footer p:nth-child(2) {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 241px) and (max-width: 480px) {
+  .logoHeader {
+    height: auto;
+  }
+  .logoHeaderBlockLeft,
+  .logoHeaderBlockRight {
+    width: 100%;
+    float: none;
+  }
+  .logoHeaderBlockRight p:nth-child(1),
+  .logoHeaderBlockRight p:nth-child(2) {
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  .logoHeaderBlockLeft {
+    height: auto;
+  }
+  .logoHeaderBlockLeft img {
+    float: none;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+  .logoHeaderBlockLeft h1 {
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+  }
+  .iosSlider .slider .item img {
+    width: 100%;
+  }
+  .slideshow {
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  .iosSlider {
+    max-height: 155px !important;
+  }
+  .slider {
+    height: auto;
+  }
+  .slideshow .selectorsBlock {
+    bottom: 5%;
+  }
+  .production h2 {
+    width: 90%;
+  }
+  .formHeader {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+  .form_bg {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .form_bg input[type="text"],
+  .form_bg input[type="phone"] {
+    width: 90%;
+  }
+  .form_bg .buttom {
+    width: 100%;
+  }
+  .textForm {
+    width: 100%;
+    padding-left: 25px;
+    float: none;
+  }
+  .contact-form {
+    float: none;
+    width: 100%;
+    padding-left: 25px;
+  }
+  .form p {
+    width: 84%;
+  }
+  .uslugiFooter {
+    overflow: hidden;
+  }
+  .uslugiFooter h2 {
+    padding-left: 25px;
+  }
+  .uslugiFooter img {
+    right: -200px;
+    top: 10px;
+  }
+  .footer p:nth-child(1) {
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  .footer p:nth-child(2) {
+    margin: 0 auto;
+    display: block;
+    right: 12.5%;
+  }
+  .footer p.dt {
+    padding-top: 90px;
+  }
+}
+@media only screen and (max-width: 240px) {
+  .logoHeader {
+    height: auto;
+  }
+  .logoHeaderBlockLeft,
+  .logoHeaderBlockRight {
+    width: 100%;
+    float: none;
+  }
+  .logoHeaderBlockRight p:nth-child(1),
+  .logoHeaderBlockRight p:nth-child(2) {
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  .logoHeaderBlockLeft {
+    height: auto;
+  }
+  .logoHeaderBlockLeft img {
+    float: none;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+  .logoHeaderBlockLeft h1 {
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+  }
+  .iosSlider .slider .item img {
+    width: 100%;
+  }
+  .slideshow {
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  .iosSlider {
+    max-height: 155px !important;
+  }
+  .slider {
+    height: auto;
+  }
+  .slideshow .selectorsBlock {
+    bottom: 5%;
+  }
+  .production h2 {
+    width: 90%;
+  }
+  .formHeader {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+  .form_bg {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .form_bg input[type="text"],
+  .form_bg input[type="phone"] {
+    width: 90%;
+  }
+  .form_bg .buttom {
+    width: 100%;
+  }
+  .textForm {
+    width: 100%;
+    padding-left: 25px;
+    float: none;
+  }
+  .contact-form {
+    float: none;
+    width: 100%;
+    padding-left: 25px;
+  }
+  .form p {
+    width: 84%;
+  }
+  .uslugiFooter {
+    overflow: hidden;
+  }
+  .uslugiFooter h2 {
+    padding-left: 25px;
+  }
+  .uslugiFooter img {
+    right: -200px;
+    top: 10px;
+  }
+  .footer p:nth-child(1) {
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  .footer p:nth-child(2) {
+    margin: 0 auto;
+    display: block;
+    right: 12.5%;
+  }
+  .footer p.dt {
+    padding-top: 90px;
+  }
 }

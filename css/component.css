@@ -242,10 +242,10 @@ p.dummy-text:nth-child(3) {
 }
 
 .dummy-text {
-    text-align:center;
+    text-align: left;
     margin: 0 auto;
     padding: 10px 0;
-    color: #00a388;
+    color: #666;
     font-size: 1em;
     font-family: 'CenturyGothic-Regular', Arial serif;
 }

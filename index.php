@@ -23,7 +23,7 @@
         <link rel="stylesheet"  href="css/moz.css" />
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/modernizr.custom.js"></script>
-    </head>
+</head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -35,6 +35,7 @@
             <span class="no-csstransitions">CSS переходы не поддерживается в вашем браузере</span>
             <span class="note-ie">Используйте более новую версию браузера.</span>
         </div>
+
         <!-- Add your site or application content here -->
 <div class="logoHeader">
     <div class="row">
@@ -57,7 +58,9 @@
             <div class="row">
                 <div class="slideshow">
                     <div class = 'iosSlider'>
+
                         <div class = 'slider'>
+
                             <div class = 'item'>
                                 <img src="img/slide/1.png" />
                             </div>
@@ -70,6 +73,8 @@
                             <div class = 'item'>
                                 <img src="img/slide/2.png" />
                             </div>
+
+
                         </div>
                         <div class = 'selectorsBlock'>
 
@@ -85,7 +90,7 @@
                     </div>
                 </div>
                 <div class="formHeader">
-                    <div class="form_bg" class="">
+                    <div id="form_bg" class="">
                         <p class="a3">Пройти безболезненную диагностику<br /> </p>
                         <form  method="POST" class="cmxform" id="commentForm"  action="formdata.php">
                             <fieldset class="ui-widget ui-widget-content ui-corner-all">
@@ -235,7 +240,7 @@
                                <span>ВОСПОЛЬЗУЙТЕСЬ НАШЕЙ МЕДИЦИНСКОЙ ПОМОЩЬЮ,</span><br>
                                 ЗАПИШИТЕСЬ НА ПЕРВИЧНЫЙ ПРИЁМ К ГИНЕКОЛОГУ ПРЯМО СЕЙЧАС
                             </p>
-                            <span class="number">8 928 570 82 02</span>
+                            <span class="number">8 988 200 30 30</span>
                             <div class="name-genekolog">
                                 <h3>КТО ВЕДЕТ ПРИЁМ?</h3>
                                 <p>Рамазанова Асият Ильясовна<br><span>Гинеколог</span></p>

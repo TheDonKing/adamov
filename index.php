@@ -13,6 +13,7 @@
         <meta name="description" content="Клиника Рамазановых">
         <title>Клиника Рамазановых  </title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name='yandex-verification' content='6c33212f4dc14e06' />
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
         <!-- Place favicon.ico in the root directory -->
@@ -23,7 +24,7 @@
         <link rel="stylesheet"  href="css/moz.css" />
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/modernizr.custom.js"></script>
-</head>
+    </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -35,7 +36,6 @@
             <span class="no-csstransitions">CSS переходы не поддерживается в вашем браузере</span>
             <span class="note-ie">Используйте более новую версию браузера.</span>
         </div>
-
         <!-- Add your site or application content here -->
 <div class="logoHeader">
     <div class="row">
@@ -58,9 +58,7 @@
             <div class="row">
                 <div class="slideshow">
                     <div class = 'iosSlider'>
-
                         <div class = 'slider'>
-
                             <div class = 'item'>
                                 <img src="img/slide/1.png" />
                             </div>
@@ -73,8 +71,6 @@
                             <div class = 'item'>
                                 <img src="img/slide/2.png" />
                             </div>
-
-
                         </div>
                         <div class = 'selectorsBlock'>
 
@@ -90,7 +86,7 @@
                     </div>
                 </div>
                 <div class="formHeader">
-                    <div id="form_bg" class="">
+                    <div class="form_bg" >
                         <p class="a3">Пройти безболезненную диагностику<br /> </p>
                         <form  method="POST" class="cmxform" id="commentForm"  action="formdata.php">
                             <fieldset class="ui-widget ui-widget-content ui-corner-all">
@@ -240,22 +236,22 @@
                                <span>ВОСПОЛЬЗУЙТЕСЬ НАШЕЙ МЕДИЦИНСКОЙ ПОМОЩЬЮ,</span><br>
                                 ЗАПИШИТЕСЬ НА ПЕРВИЧНЫЙ ПРИЁМ К ГИНЕКОЛОГУ ПРЯМО СЕЙЧАС
                             </p>
-                            <span class="number">8 988 200 30 30</span>
+                            <span class="number">8 928 570 82 02</span>
                             <div class="name-genekolog">
                                 <h3>КТО ВЕДЕТ ПРИЁМ?</h3>
                                 <p>Рамазанова Асият Ильясовна<br><span>Гинеколог</span></p>
                             </div>
                         </div>
                         <div>
-                            <div class="dummy-img"><img src="img/contentshow/5.jpg"></div>
-                            <h3>УЗИ исследование</h3>
-                            <p class="dummy-text">Ультразвуковое исследование - это безопасный метод диагностики. При проведении УЗИ радиоактивное излучение отсутствует! В один день можно проводить несколько ультразвуковых исследований одного человека.
-                                Для получения точной картины урологических и гинекологических заболеваний крайне необходимо пройти ультразвуковое исследование (УЗИ).
-                                Современные аппараты УЗИ диагностирования, которыми оснащен медицинский центр «Клиника Рамазановых» позволяет получить полную картину течения таких болезней как простата, болезни почек, матки и яичников, органов малого таза и живота.
+                            <div class="dummy-img"><img src="img/contentshow/3.jpg"></div>
+                            <h3>Проктолог</h3>
+                            <p class="dummy-text">Современная медицина обладает целым арсеналом методик и средств, лекарственными медикаментами, которые позволяют эффективно и быстро и порой безболезненно, без оперативного вмешательства, избавиться от проктологических заболеваний.
                             </p>
-                            <p class="dummy-text">Современное УЗИ оборудование в клинике позволяет получить цифровые фото и мини-фильмы, которые могут быть записаны на CD, flash-память и выдаются пациентам вместе с письменным заключением от врача-специалиста. При дальнейшем лечении или прохождении диагностики любой лечащий врач всегда имеет возможность просмотреть эти снимки на компьютере, также они могут быть переданы через интернет в выбранный другой медицинский центр.
-                                Такое заключение, либо в напечатанном виде, либо УЗИ снимки на цифровом носителе, является свидетельством современного класса оборудования и добросовестного выполнения исследования.УЗИ исследования могут носить самостоятельный характер обследования, также они включаются в гинекологический, урологический и в любой другой осмотр пациента.
+                            <p class="dummy-text">Специалисты «Клиники Рамазановых» настоятельно рекомендуют пациентам своевременно обратиться к проктологу, не дожидаться когда заболевание перейдет в разряд хронических, ведь только на начальной стадии можно быстро и эффективно провести лечение и без необходимости оперативного вмешательства. Проктологические заболевания могут принести не только дискомфорт, но и усиливающиеся болезненные ощущения, плохое настроение, вызвать депрессию, при запущенных случаях зачастую требуется хирургическое вмешательство.
                             </p>
+                            <p class="dummy-text">
+                                Индивидуальный подход к каждому пациенту и внимательное отношение врачей, современные методы диагностики и огромный опыт, накопленный за годы работы, а также прогрессивные методики лечения, применяемые в медицинском центре «Рамазановых» давно завоевали доверие пациентов.
+                                Приходите к нам в клинику, и мы позаботимся о Вашем здоровье!</p>
                         </div>
                         <div>
                             <div class="dummy-img"><img src="img/contentshow/6.jpg"></div>
@@ -452,7 +448,7 @@
                         Россия, г. Махачкала,  <br />
                         ул. Лермонтова, 2 А (рядом со школой № 16)<br/>
                         Тел. регистратуры: 8 (8722) 67-64-47<br/>
-                        Тел. руководителя: 988-200-30-30, 90-40-00<br/>
+                        Тел. руководителя: 988-200-30-30, 93-40-00<br/>
                         Наш центр работает: С 8.00 до 16.00<br/>
                         Суббота –  воскресенье выходной<br/>
                         E-mail:  <a href="mailto:ramazanovi.ru@mail.ru" target="_blank">ramazanovi.ru@mail.ru</a>
@@ -482,17 +478,27 @@
             </div>
         </div>
 
+
         <div class="map">
             <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=SzjT8PL3PmZemvT9Ofa29OAsoqn0I_jb&width=100%&height=450"></script>
         </div>
 
         <div class="footer">
             <div class="row">
-                <p>© Клиника камазановых<br>
-                    2015 г.</p>
-                <p><?php echo $number ?></p>
+                <p>© Клиника Рамазановых<br>
+                    2015 г.<br>
+                   <span style="font-size: 12px">* Возможны противопоказания, необходима консультация специалиста</span>
+                </p>
+                <p><?php echo $number ?>
+                    <!-- Yandex.Metrika informer --><a href="https://metrika.yandex.ru/stat/?id=30681088&amp;from=informer" target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/30681088/3_1_38F9F9FF_18D9D9FF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:30681088,lang:'ru'});return false}catch(e){}"/></a><!-- /Yandex.Metrika informer --><!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter30681088 = new Ya.Metrika({id:30681088, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/30681088" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+                </p>
+				<p>Наш юридический адрес: <br>
+				г. Махачкала, ул. Г.Далгата 67/3
+				</p>
                 <p class="dt"><a href="http://www.s-dt.ru" target="_blank" >Разработано в DTStudio</a> </p>
+
             </div>
+
         </div>
 
 
@@ -588,5 +594,14 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
+
+
+        <link rel="stylesheet" href="//cdn.callbackhunter.com/widget/tracker.css">
+        <script type="text/javascript"
+                src="//cdn.callbackhunter.com/widget/tracker.js" charset="UTF-8"></script >
+        <script type="text/javascript">var hunter_code="4aa53dc6066f88f75235deb5c8a9b817";</script>
+
+
     </body>
 </html>

@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6{
     float: left;
   }
     .logoHeaderBlockLeft img{
-      margin-top: 65px;
+      margin-top: 50px;
       float: left;
       display: inline;
     }
@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6{
         font:30px CenturyGothic-Bold, sans-serif;
         text-transform: uppercase;
         color:@color-base ;
-        padding-left: 200px;
+        padding-left: 165px;
         padding-top: 75px;
       }
 .logoHeaderBlockRight{
@@ -279,7 +279,7 @@ border-radius:@radius;
   margin-top: 20px;
 
 }
-#form_bg input, button{
+.form_bg input, button{
   font:16px CenturyGothic-Regular, sans-serif ;
   padding-left:2px;
   color:#d2e2e2 ;
@@ -292,7 +292,7 @@ border-radius:@radius;
 
 }
 
-#form_bg input[type="text"] {
+.form_bg input[type="text"] {
   border: 1px solid rgb(207, 207, 207);
   #borderform;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.7);
@@ -303,7 +303,7 @@ border-radius:@radius;
   width:200px;
 }
 
-#form_bg input[type="email"] {
+.form_bg input[type="email"] {
   border: 1px solid rgb(207, 207, 207);
   #borderform;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.7);
@@ -315,7 +315,7 @@ border-radius:@radius;
   width:200px;
 }
 
-#form_bg input[type="phone"] {
+.form_bg input[type="phone"] {
   border: 1px solid rgb(207, 207, 207);
   #borderform;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.7);
@@ -327,11 +327,11 @@ border-radius:@radius;
   width:200px;
 }
 
-#form_bg form{
+.form_bg form{
   margin-top:5px;
   margin-left:13px ;
 }
-#form_bg p.a3{
+.form_bg p.a3{
   text-align:left;
   font: 20px "CenturyGothic-Bold", sans-serif;
   line-height:1;
@@ -1102,21 +1102,427 @@ padding-top: 50px;
   .font-base-bold(30px);
 }
 .footer p.dt{
-  margin: 0 auto;
-  padding-bottom: 10px;
-  padding-top:35px;
+  margin: -30px auto 0px;
   .font-base-regular(15px);
   text-align: center;
   a{
-    color: red;
+    color: #fff;
     text-decoration: none;
-    border-bottom: 1px dashed red;
+    border-bottom: 1px dashed #fff;
+  }
+  a::before{
+    content: "";
+    background:url(../img/dt.png) no-repeat  ;
+    height: 27px;
+    display: inline-block;
+    padding-bottom: -6px;
+    padding-right: 30px;
+    text-decoration: none;
+
   }
 
 }
+
 .footer p:nth-child(2)::before{
   font:30px "FontAwesome";
   content: "\f095";
   padding-left: 5px;
   padding-right: 6px;
+}
+
+@media screen and (max-width: 1000px) {
+
+
+}
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+  .iosSlider .slider .item img{
+    width: 100%;
+  }
+
+}
+@media only screen and (min-width: 769px) and (max-width: 800px) {
+  .iosSlider .slider .item img{
+    width: 100%;
+  }
+  .slideshow{
+    width: 100%;
+    float: none;
+  }
+  .slider{
+    height: auto;
+  }
+  .formHeader{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+  .form_bg{
+    width: 50%;
+    margin: 0 auto;
+    input[type="text"], input[type="phone"]{
+width: 90%;
+    }
+    .buttom{
+      width: 100%;
+    }
+  }
+
+
+
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .logoHeader{
+    height: auto;
+  }
+  .logoHeaderBlockLeft, .logoHeaderBlockRight{
+    width: 100%;
+    float: none;
+  }
+  .logoHeaderBlockRight p:nth-child(1), .logoHeaderBlockRight p:nth-child(2){
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  .iosSlider .slider .item img{
+    width: 100%;
+  }
+  .slideshow{
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  .iosSlider{
+    max-height: 260px !important;
+  }
+  .slider{
+    height: auto;
+  }
+  .slideshow .selectorsBlock{
+    bottom: 5%;
+  }
+  .formHeader{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+  .form_bg{
+    width: 50%;
+    margin: 0 auto;
+    input[type="text"], input[type="phone"]{
+      width: 90%;
+    }
+    .buttom{
+      width: 100%;
+    }
+  }
+  .textForm{
+    width: 100%;
+    padding-left: 25px;
+    float: none;
+  }
+  .contact-form{
+    float: none;
+    width: 100%;
+    padding-left: 25px;
+  }
+  .uslugiFooter h2{
+    padding-left: 25px;
+  }
+
+
+
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .logoHeader{
+    height: auto;
+  }
+  .logoHeaderBlockLeft, .logoHeaderBlockRight{
+    width: 100%;
+    float: none;
+  }
+  .logoHeaderBlockRight p:nth-child(1), .logoHeaderBlockRight p:nth-child(2){
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  .iosSlider .slider .item img{
+    width: 100%;
+  }
+  .slideshow{
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  .iosSlider{
+    max-height: 260px !important;
+  }
+  .slider{
+    height: auto;
+  }
+  .slideshow .selectorsBlock{
+    bottom: 5%;
+  }
+  .formHeader{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+  .form_bg{
+    width: 50%;
+    margin: 0 auto;
+    input[type="text"], input[type="phone"]{
+      width: 90%;
+    }
+    .buttom{
+      width: 100%;
+    }
+  }
+  .textForm{
+    width: 100%;
+    padding-left: 25px;
+    float: none;
+  }
+  .contact-form{
+    float: none;
+    width: 100%;
+    padding-left: 25px;
+  }
+  .uslugiFooter {
+    overflow: hidden;
+     h2{
+      padding-left: 25px;
+    }
+    img{
+      right: -200px;
+      top: 10px;
+
+    }
+  }
+  .footer {
+    p{
+      padding-left: 20px;
+    }
+    p:nth-child(2){
+padding-left: 0;
+    }
+  }
+
+
+}
+@media only screen and (min-width: 241px) and (max-width: 480px) {
+  .logoHeader{
+    height: auto;
+  }
+  .logoHeaderBlockLeft, .logoHeaderBlockRight{
+    width: 100%;
+    float: none;
+  }
+  .logoHeaderBlockRight p:nth-child(1), .logoHeaderBlockRight p:nth-child(2){
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  .logoHeaderBlockLeft{
+    height: auto;
+    img{
+      float: none;
+      width: 70%;
+      margin: 0 auto;
+      display: block;
+    }
+    h1{
+      text-align: center;
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+  .dummy-img img{
+    margin: 0 auto;
+    display: block;
+    max-width:100%;
+  }
+
+  .iosSlider .slider .item img{
+    width: 100%;
+  }
+  .slideshow{
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  .iosSlider{
+    max-height:155px !important;
+  }
+  .slider{
+    height: auto;
+  }
+  .slideshow .selectorsBlock{
+    bottom: 5%;
+  }
+  .production h2{
+    width: 90%;
+  }
+  .formHeader{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+  .form_bg{
+    width: 95%;
+    margin: 0 auto;
+    input[type="text"], input[type="phone"]{
+      width:85%;
+    }
+    .buttom{
+      width: 100%;
+    }
+  }
+  .textForm{
+    width: 100%;
+    padding-left: 25px;
+    float: none;
+  }
+  .contact-form{
+    float: none;
+    width: 100%;
+    padding-left: 25px;
+  }
+  .form p{
+    width: 84%;
+  }
+  .uslugiFooter {
+    overflow: hidden;
+    h2{
+      padding-left: 25px;
+    }
+    img{
+      right: -200px;
+      top: 10px;
+
+    }
+  }
+  .footer {
+    p:nth-child(1){
+      padding-left: 20px;
+      padding-top: 10px;
+
+
+      br{
+        display: none;
+      }
+    }
+    p:nth-child(2){
+      margin: 0 auto;
+      display: block;
+      right: 12.5%;
+      top:20px
+    }
+    p.dt{
+      padding-top:90px;
+    }
+  }
+
+
+}
+@media only screen and (max-width: 240px) {
+  .logoHeader{
+    height: auto;
+  }
+  .logoHeaderBlockLeft, .logoHeaderBlockRight{
+    width: 100%;
+    float: none;
+  }
+  .logoHeaderBlockRight p:nth-child(1), .logoHeaderBlockRight p:nth-child(2){
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  .logoHeaderBlockLeft{
+    height: auto;
+    img{
+      float: none;
+      width: 70%;
+      margin: 0 auto;
+      display: block;
+    }
+    h1{
+      text-align: center;
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+
+  .iosSlider .slider .item img{
+    width: 100%;
+  }
+  .slideshow{
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  .iosSlider{
+    max-height:155px !important;
+  }
+
+  .slider{
+    height: auto;
+  }
+  .slideshow .selectorsBlock{
+    bottom: 5%;
+  }
+  .production h2{
+    width: 90%;
+  }
+  .formHeader{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+  .form_bg{
+    width: 95%;
+    margin: 0 auto;
+    input[type="text"], input[type="phone"]{
+      width:85%;
+    }
+    .buttom{
+      width: 100%;
+    }
+  }
+  .textForm{
+    width: 100%;
+    padding-left: 25px;
+    float: none;
+  }
+  .contact-form{
+    float: none;
+    width: 100%;
+    padding-left: 25px;
+  }
+  .form p{
+    width: 84%;
+  }
+  .uslugiFooter {
+    overflow: hidden;
+    h2{
+      padding-left: 25px;
+    }
+    img{
+      right: -200px;
+      top: 10px;
+
+    }
+  }
+  .footer {
+    p:nth-child(1){
+      padding-left: 20px;
+      padding-top: 10px;
+    }
+    p:nth-child(2){
+      margin: 0 auto;
+      display: block;
+      right: 12.5%;
+    }
+    p.dt{
+      padding-top:90px;
+    }
+  }
+
+
+
 }

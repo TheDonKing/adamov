@@ -931,7 +931,7 @@ button {
   text-align: left;
 }
 .reviews-a2 .description ul.ch-grid li {
-  width: 48%;
+  width: 47%;
   height: auto;
   margin: 0;
   padding: 10px;
@@ -941,6 +941,11 @@ button {
   color: #000000;
 }
 .reviews-a2 .description ul.ch-grid li small {
+  color: #000000;
+}
+.reviews-a2 .description ul.ch-grid li small a {
+  text-decoration: none;
+  border-bottom: 1px dotted #000000;
   color: #000000;
 }
 .reviews-a2 .description ul.ch-grid li:nth-child(odd) h4:before {
@@ -1192,6 +1197,12 @@ button {
   .slideshow .selectorsBlock {
     bottom: 5%;
   }
+  .reviews-a2 .description ul.ch-grid li {
+    width: 95%;
+  }
+  .reviews-a2 .description ul.ch-grid li p.date {
+    margin: 10px 29%;
+  }
   .formHeader {
     width: 100%;
     float: none;
@@ -1252,6 +1263,17 @@ button {
   }
   .slideshow .selectorsBlock {
     bottom: 5%;
+  }
+  .reviews-a2 .description ul.ch-grid li {
+    width: 95%;
+  }
+  .reviews-a2 .description .description-box {
+    float: none;
+    width: 95%;
+    margin-bottom: 7%;
+  }
+  .reviews-a2 .description ul.ch-grid li p.date {
+    margin: 10px 29%;
   }
   .formHeader {
     width: 100%;
@@ -1331,6 +1353,22 @@ button {
   }
   .iosSlider .slider .item img {
     width: 100%;
+  }
+  .reviews-a2 .description ul.ch-grid li {
+    width: 95%;
+  }
+  .reviews-a2 .description .description-box {
+    float: none;
+    width: 95%;
+    margin-bottom: 7%;
+  }
+  .reviews-a2 .description ul.ch-grid li p.date {
+    margin: 10px 29%;
+  }
+  .reviews-a2 .perfectly span {
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
   .slideshow {
     width: 100%;
@@ -1442,7 +1480,27 @@ button {
     height: auto;
   }
   .iosSlider {
-    max-height: 155px !important;
+    max-height: 102px !important;
+  }
+  .reviews-a2 .description ul.ch-grid li {
+    width: 95%;
+  }
+  .reviews-a2 .description .description-box {
+    float: none;
+    width: 95%;
+    margin-bottom: 7%;
+  }
+  .reviews-a2 .description ul.ch-grid li p.date {
+    margin: 10px 0%;
+  }
+  .reviews-a2 .perfectly span {
+    margin-bottom: 10px;
+  }
+  .reviews-a2 .perfectly {
+    padding-top: 10px;
+  }
+  .hww h2 {
+    font-size: 18px;
   }
   .slider {
     height: auto;
@@ -1464,7 +1522,7 @@ button {
   }
   .form_bg input[type="text"],
   .form_bg input[type="phone"] {
-    width: 85%;
+    width: 81%;
   }
   .form_bg .buttom {
     width: 100%;
@@ -1489,7 +1547,7 @@ button {
     padding-left: 25px;
   }
   .uslugiFooter img {
-    right: -200px;
+    right: -140px;
     top: 10px;
   }
   .footer p:nth-child(1) {
